@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBB About</title>
+    <style>
+        body {
+            background-color: rgb(255, 197, 130);
+        }
+        .upper {
+            background-color: rgb(255, 157, 0);
+            color: white;
+            border-radius: 1em;
+        }
+        .image {
+            position: absolute;
+            left: 40em;
+            bottom: 23em;
+            border: 0.4em solid;
+            border-radius: 50em;
+            display: none;
+            transition:.5s ease-in-out;
+        }
+        .Q {
+            color: red;
+            -webkit-text-stroke: 0.03em white;
+
+        }
+        .A {
+            color: rgb(0, 170, 255);
+            font-size: 1em;
+        }
+        .midd {
+            text-align: center;
+            position: relative;
+            left: 18em;
+            border-bottom: 0.2em rgb(255, 255, 255) solid;
+            width: 11.5em;
+        }
+        .textcent {
+            text-align: center;
+        }
+        .kinoucmd {
+            margin: 0 0 0 0;
+            border: 0.18em rgb(54, 54, 54) solid;
+            background-color: rgb(255, 233, 207);
+        }
+        .kuwake {
+            text-align: center;
+            color: rgb(255, 123, 0);
+        }
+        .feed {
+            width: 50em;
+            height: 20em;
+            border-radius: 1em;
+            position: relative;
+            left: 30em;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(35, 35, 35);
+            border: 0.4em rgb(102, 102, 102) solid;
+            transition:.7s ease-in-out;
+        }
+        .feed:hover {
+            border-radius: 1.3em;
+            border: 0.4em rgb(183, 183, 183) solid;
+        }
+        .submit {
+            width: 14em;
+            height: 1.5em;
+            position: relative;
+            right: 6em;
+            top: 1.5em;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            border-radius: 0.5em;
+            border: none;
+            background-color: rgb(0, 140, 255);
+            box-shadow: 0em 0.2em rgb(0, 89, 184);
+            transition:.2s ease-in-out;
+        }
+        .submit:hover {
+            background-color: rgb(67, 158, 255);
+            box-shadow: 0em 0.2em rgb(0, 107, 222);
+        }
+        .submit:active {
+            background-color: rgb(122, 226, 255);
+            box-shadow: 0em 0.2em rgb(103, 176, 255);
+        }
+        footer {
+            background-color: rgb(255, 226, 179);
+            border-radius: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header class="upper"><h1><br>シンプル便利bot</h1><h3>S シンプル<br>B 便利<br>B Bot</h3><img src="/Image/bot.png" width="256" class="image" id="imagge"><div><br><br><br><br><br></div></header>
+    <h1 class="Q midd">Q.シンプル便利botとは</h1>    <h5 class="A">A.名前の通りシンプルで、便利な機能を追加するDiscordBotです。詳しくは<a href="#kinou">機能一覧</a>または、<a href="#cmd">コマンド一覧</a>をご覧ください。</h5>
+    <h1 id="kinou" class="midd">機能一覧</h1>
+    <h3 class="kinoucmd kuwake">※ここにはコマンドは含まれません。</h3>
+    <h3 class="kinoucmd">・twitterのリンクをfxtwitterに置き換える機能</h3>
+    <h3 class="kinoucmd"></h3>
+    <h1 id="cmd" class="midd ">コマンド一覧</h1>
+    <h3 class="kinoucmd kuwake">お遊び系</h3>
+    <h3 class="kinoucmd">/randommute vc内のランダムなユーザーがミュートされますが岩男が高確率でミュート。2:3</h3>
+    <h3 class="kinoucmd">/gk ごくもんきょうVCに選択したユーザーを封印します。</h3>
+    <h3 class="kinoucmd">/gt がちろぼ氏専用コマンド。筋トレ回数を記録します。</h3>
+    <h3 class="kinoucmd kuwake">地味に便利な機能</h3>
+    <h3 class="kinoucmd">/random 乱数を生成します。最低値と最大値を設定できます。</h3>
+    <h3 class="kinoucmd">/embed 埋め込みを生成します。</h3>
+    <h3 class="kinoucmd">/among アモアス部屋の情報を設定をします</h3>
+    <h3 class="kinoucmd">/amonginfo 現在のアモアス部屋の情報を表示をします</h3>
+    <h3 class="kinoucmd kuwake">VC関連のコマンド</h3>
+    <h3 class="kinoucmd">/vclog vcの入室ログをオンオフします。</h3>
+    <h3 class="kinoucmd">/vcall VCの全員に対してミュートや移動ができるコマンドです。</h3>
+    <h3 class="kinoucmd">/vcuser 選択した複数人のユーザーに対してミュート、移動ができるコマンドです。</h3>
+    <h3 class="kinoucmd">/vcjoin BotをVCに参加させます。</h3>
+    <h3 class="kinoucmd kuwake">その他</h3>
+    <h3 class="kinoucmd">/about botの説明を表示します。</h3>
+    <h3 class="kinoucmd">/helpcmd 引数付きコマンドの詳細説明を表示します。</h3>
+    <h1 id="cmd" class="midd textcent">機能提案</h1>
+    <textarea class="feed" id="feedback" placeholder="機能提案内容を分かりやすく説明してください。"></textarea>
+    <button class="submit">送信</button>
+    <div><br><br><br><br></div>
+    <footer><h2>2024 YK_Akina | Bot Powered by Lua<img src="Image/Youtube.png" width="24" onclick="location.href = ('https://www.youtube.com/channel/UC5YtiCcB4I3sbomIz1clhrg')"> &emsp;<img src="Image/Twitter.png" width="24" onclick="location.href = ('https://twitter.com/RBX_YKAkina')"></h2></footer>
+    <script>
+        window.onload = function() {
+            document.getElementById('imagge').style.display = 'block'
+        }
+    </script>
+</body>
+</html>
